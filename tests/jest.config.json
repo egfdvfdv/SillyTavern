@@ -1,9 +1,13 @@
 {
     "verbose": true,
     "transform": {},
-    "extensionsToTreatAsEsm": [],
-    "preset": "jest-puppeteer",
+    "extensionsToTreatAsEsm": [".js"],
+    "moduleFileExtensions": ["js", "json", "node"],
     "setupFilesAfterEnv": [
         "<rootDir>/jest.setup.js"
-    ]
+    ],
+    "testEnvironment": "node",
+    "testEnvironmentOptions": {
+        "experimentalVmModules": true
+    }
 }
